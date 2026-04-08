@@ -1,8 +1,9 @@
+
 # 🌤 Weather App — Django Project
 
 A beautiful weather app built with Django, featuring a glassmorphism UI with animated background.
 
----
+----
 
 ## 📁 Project Structure
 
@@ -30,7 +31,7 @@ weather_project/
                 └── main.js
 ```
 
----
+----
 
 ## 🚀 Setup & Run
 
@@ -60,7 +61,7 @@ python manage.py runserver
 http://127.0.0.1:8000/
 ```
 
----
+----
 
 ## 🎨 Features
 
@@ -72,7 +73,7 @@ http://127.0.0.1:8000/
 - Fully responsive design
 - Error handling for invalid cities
 
----
+----
 
 ## 🔑 API Info
 
