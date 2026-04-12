@@ -10,8 +10,10 @@ DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'weather-project-jrkm.onrender.com']
 
 INSTALLED_APPS = [
+    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.messages',
     'django.contrib.staticfiles',
     'weather_app',
 ]
@@ -20,6 +22,10 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
 ]
 
 ROOT_URLCONF = 'weather_project.urls'
@@ -38,6 +44,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'weather_project.wsgi.application'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://weather-project-jrkm.onrender.com',
+]
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
