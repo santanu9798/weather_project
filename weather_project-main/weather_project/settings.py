@@ -10,6 +10,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'weather-project-jrkm.onrender.com']
 
 INSTALLED_APPS = [
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
     'django.contrib.staticfiles',
     'weather_app',
 ]
