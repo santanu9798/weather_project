@@ -50,4 +50,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # OpenWeatherMap API Key (replace with your own key)
-WEATHER_API_KEY = 'a643ee362f026b3b63010fee2e9ab040'
+WEATHER_API_KEY = os.environ.get('WEATHER_API_KEY', 'a643ee362f026b3b63010fee2e9ab040')
